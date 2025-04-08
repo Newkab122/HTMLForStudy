@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>คำนวณ VAT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">หน้าหลัก</a>
+    <a href="profile.html">ข้อมูลส่วนตัว</a>
+    <a href="form.html">กรอกฟอร์ม</a>
+    <a href="vat.html" class="active">คำนวณ VAT</a>
+    <a href="contact.html">ติดต่อ</a>
+  </nav>
+
+  <div class="container">
+    <h1>คำนวณภาษี VAT 7%</h1>
+    
+    <label>จำนวนเงิน:</label>
+    <input type="number" id="amount" placeholder="กรอกจำนวนเงิน" required>
+
+    <label>เลือกประเภทการคำนวณ:</label>
+    <select id="mode">
+      <option value="exclude">ยังไม่รวม VAT (คิดเพิ่ม 7%)</option>
+      <option value="include">รวม VAT แล้ว (แยก VAT ออก)</option>
+    </select>
+
+    <p>ขั้นตอนการคำนวณ:</p>
+    <p>ถ้าคุณกรอกจำนวนเงิน และเลือก "ยังไม่รวม VAT" ระบบจะคำนวณ VAT 7% ให้ แล้วแสดงจำนวน เงิน ที่รวม VAT แล้ว</p>
+    <p>ถ้าคุณกรอกจำนวนเงิน และเลือก "รวม VAT แล้ว" ระบบจะคำนวณแยกภาษีจากราคาที่รวม VAT มาแล้ว</p>
+
+    <button onclick="alert('กรุณาคำนวณด้วยมือของคุณ เพราะระบบ ยังทำไม่เสร็จอิอิ')">คำนวณ</button>
+  </div>
+
+</body>
+</html>
